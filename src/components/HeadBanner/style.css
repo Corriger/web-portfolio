@@ -1,0 +1,13 @@
+.hero{
+  width: 100%;
+  background: green;
+}
+
+h1 {
+  top: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  width: auto;
+  color: blue;
+  font-size: 20px;
+}
