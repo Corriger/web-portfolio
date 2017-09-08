@@ -1,0 +1,25 @@
+/*--- The Guy ---*/
+.TheGuy {
+  background: blue; }
+  .TheGuy img {
+    width: 300px;
+    float: right;
+    border-bottom-left-radius: 50%; }
+    @media only screen and (max-width: 480px) {
+      .TheGuy img {
+        display: none; } }
+  .TheGuy h2 {
+    float: right;
+    line-height: normal;
+    letter-spacing: normal;
+    margin: 15px;
+    font-size: 2.5rem;
+    text-align: right; }
+    @media only screen and (max-width: 480px) {
+      .TheGuy h2 {
+        text-align: center; } }
+  .TheGuy p {
+    width: auto;
+    display: block;
+    float: left;
+    font-family: monospace; }
