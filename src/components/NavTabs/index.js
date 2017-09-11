@@ -20,7 +20,7 @@ class NavTabs extends Component{
         <Tabs>
           <TabList className="tabs">
             <Tab>The<br/>Guy</Tab>
-            <Tab>The<br/>Method</Tab>
+            <Tab>The<br/>Methods</Tab>
             <Tab>The<br/>Code</Tab>
             <Tab>The<br/>Art</Tab>
             <Tab>The<br/>Writing</Tab>
