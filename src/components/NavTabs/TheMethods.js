@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './style.css'
-//languages
+// languages
 import html5 from './html5.png'
 import css3 from './css3.png'
 import sass from './sass.png'
@@ -8,11 +8,19 @@ import js from './js.png'
 import jquery from './jquery.png'
 import react from './react.svg'
 import wp from './wp.png'
-//Other?
+// Coding
+import jsfiddle from './jsfiddle.png'
+import codepen from './codepen.png'
 import github from './github.png'
 import atom from './atom.png'
+import jsbin from './jsbin.png'
+// Images
+import pixlr from './pixlr.png'
 import gimp from './gimp.png'
 import sai from './sai.png'
+//  Wireframe
+import uxpin from './uxpin.png'
+import figma from './figma.png'
 
 class TheMethods extends Component{
   render(){
@@ -28,12 +36,24 @@ class TheMethods extends Component{
           <img src={ react } alt=""/>
           <img src={ wp } alt=""/>
         </div>
-        <strong>The Rest</strong>
+        <strong>Coding Platforms</strong>
         <div className="lan">
+          <img src={ codepen } alt=""/>
           <img src={ github } alt=""/>
           <img src={ atom } alt=""/>
+          <img src={ jsbin } alt=""/>
+          <img src={ jsfiddle } alt=""/>
+        </div>
+        <strong>Image Editors</strong>
+        <div className="lan">
+          <img src={ pixlr } alt=""/>
           <img src={ gimp } alt=""/>
           <img src={ sai } alt=""/>
+        </div>
+        <strong>Wireframing</strong>
+        <div className="lan">
+          <img src={ figma } alt=""/>
+          <img src={ uxpin } alt=""/>
         </div>
       </div>
     )

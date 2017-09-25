@@ -1,3 +1,11 @@
+/*--- General ---*/
+.TheGuy,
+.TheMethods,
+.TheCode,
+.TheArt {
+  max-width: 1200px;
+  margin: 0 auto; }
+
 /*--- The Guy ---*/
 .TheGuy img {
   display: block;
@@ -27,12 +35,85 @@
 
 /*--- The Methods ---*/
 .TheMethods .lan {
+  min-width: 320px;
   display: block;
-  height: auto;
-  margin: 0 auto; }
+  height: auto; }
   .TheMethods .lan img {
     margin: 0;
-    margin-right: 7.1429%;
-    height: 100px; }
-    .TheMethods .lan img:first-of-type {
-      margin-left: 7.1429%; }
+    margin-right: 15px;
+    height: 75px; }
+
+/*--- The Code ---*/
+.TheCode header {
+  max-height: 25%;
+  width: 100%; }
+  .TheCode header > img {
+    display: block;
+    width: 100px;
+    margin: 0 auto; }
+  .TheCode header h2 {
+    letter-spacing: normal;
+    text-align: center; }
+  .TheCode header section {
+    width: 50%;
+    padding: 0 10%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 480px) {
+      .TheCode header section {
+        width: 80%; } }
+    .TheCode header section p {
+      text-align: center;
+      display: block;
+      color: gold; }
+
+.TheCode > div {
+  display: inline-block;
+  width: 70%;
+  max-height: 75%;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  @media only screen and (max-width: 480px) {
+    .TheCode > div {
+      width: 100%; } }
+  .TheCode > div > section {
+    width: 100%;
+    margin-bottom: 30px; }
+    .TheCode > div > section img {
+      display: inline-block;
+      margin-right: 30px;
+      max-height: 100px; }
+      @media only screen and (max-width: 480px) {
+        .TheCode > div > section img {
+          display: block;
+          margin: 0 auto; } }
+    .TheCode > div > section blockquote {
+      display: inline-block;
+      width: calc(80% - 30px);
+      max-height: 100px;
+      font-style: italic;
+      margin-bottom: 15px; }
+      @media only screen and (max-width: 480px) {
+        .TheCode > div > section blockquote {
+          width: 100%;
+          text-align: center; } }
+    .TheCode > div > section p {
+      clear: both; }
+      @media only screen and (max-width: 480px) {
+        .TheCode > div > section p {
+          text-align: center; } }
+
+.TheCode aside {
+  float: right;
+  display: inline-block;
+  width: 30%;
+  color: #744589;
+  padding: 0 15px; }
+  @media only screen and (max-width: 480px) {
+    .TheCode aside {
+      display: none; } }
+  .TheCode aside ul strong {
+    margin-bottom: 7.5px; }
+  .TheCode aside ul li {
+    font-style: italic;
+    font-size: 0.8em;
+    border-bottom: 1px solid #744589; }
