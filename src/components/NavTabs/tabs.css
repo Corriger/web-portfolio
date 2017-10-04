@@ -6,8 +6,7 @@
 .react-tabs__tab {
   color: rgba(255,215,0,1);
   text-align: center;
-  width: 5%;
-  margin: 0 7.5%;
+  width: 25%;
   float: left;
   display: inline-block;
   position: relative;
@@ -61,7 +60,7 @@
   float: right;
   margin: auto;
 }
-.react-tabs__tab-panel--selected div{
+.react-tabs__tab-panel--selected>div{
   color: rgba(176,196,222,1);
   height: 70vh;
   padding: 22.5px;
@@ -70,7 +69,7 @@
 }
 @media only screen and (max-width: 480px){
   .react-tabs__tab{
-    width: 20%;
+    width: 25%;
     margin: 0;
   }
 }

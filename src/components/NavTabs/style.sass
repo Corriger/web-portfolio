@@ -31,9 +31,11 @@ $tertiary: rgba(176,196,222,1)
     width: auto
     display: block
     float: left
-    font-family: monospace
 /*--- The Methods ---*/
 .TheMethods
+  strong
+    font-size: 1em
+    letter-spacing: normal
   .lan
     min-width: 320px
     display: block
@@ -47,15 +49,17 @@ $tertiary: rgba(176,196,222,1)
   header
     max-height: 25%
     width: 100%
-    & > img
+    img
       display: block
       width: 100px
       margin: 0 auto
+      @media only screen and (max-width: 768px)
+        display: none
     h2
       letter-spacing: normal
       text-align: center
     section
-      width: 50%
+      width: 70%
       padding: 0 10%
       margin: 0 auto
       @media only screen and (max-width: 480px)
@@ -70,43 +74,78 @@ $tertiary: rgba(176,196,222,1)
     max-height: 75%
     overflow-y: auto
     overflow-x: hidden
-    @media only screen and (max-width: 480px)
+    @media only screen and (max-width: 768px)
       width: 100%
     & > section
       width: 100%
       margin-bottom: 30px
+      padding-bottom: 15px
+      border-bottom: 2px solid $primary
+      &:last-of-type
+        border-bottom: 0
       img
-        display: inline-block
+        display: block
+        float: left
         margin-right: 30px
-        max-height: 100px
-        @media only screen and (max-width: 480px)
-          display: block
+        width: 30%
+        @media only screen and (max-width: 768px)
+          float: none
           margin: 0 auto
+          max-height: none
+          width: 50%
       blockquote
         display: inline-block
-        width: calc(80% - 30px)
-        max-height: 100px
+        top: 0
+        left: 0
+        padding: 0
+        width: calc(70% - 30px)
+        min-height: 100px
         font-style: italic
         margin-bottom: 15px
-        @media only screen and (max-width: 480px)
+        color: white
+        @media only screen and (max-width: 768px)
           width: 100%
           text-align: center
       p
+        margin-top: 15px
+        display: block
         clear: both
-        @media only screen and (max-width: 480px)
-          text-align: center
+        span
+          display: inline
+          text-transform: uppercase
+          font-weight: bold
+          color: $secondary
+          font-family: sans-serif
+        a:link,
+        a:visited
+          @extend span
+          text-transform: none
+          text-decoration: none
+          color: $primary
+          font-weight: normal
   aside
     float: right
     display: inline-block
     width: 30%
     color: $primary
     padding: 0 15px
-    @media only screen and (max-width: 480px)
+    @media only screen and (max-width: 768px)
       display: none
+    strong
+      margin-bottom: 7.5px
+      @media only screen and (max-width: 992px)
+        letter-spacing: normal
+        font-size: 1.2em
     ul
-      strong
-        margin-bottom: 7.5px
       li
         font-style: italic
         font-size: 0.8em
         border-bottom: 1px solid $primary
+/*--- The Art ---*/
+.TheArt
+  .current
+    display: block
+  img
+    display: inline-block
+    margin: 7.5px
+    height: 200px

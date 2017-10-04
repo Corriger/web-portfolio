@@ -1,0 +1,37 @@
+/* ------ */
+.Refs {
+  height: 10vh;
+  width: 100%;
+  color: lightsteelblue;
+  font-size: 1em;
+  background: black;
+  padding: 7.5px; }
+  @media only screen and (max-width: 768px) {
+    .Refs {
+      padding: 7.5px;
+      font-size: .7em;
+      position: fixed;
+      bottom: 0;
+      float: left;
+      height: 10%; } }
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+    .Refs {
+      height: 20%; } }
+  .Refs > section {
+    float: left;
+    width: 50%;
+    height: 100%; }
+    @media only screen and (max-width: 768px) {
+      .Refs > section {
+        padding: 7.5px; } }
+    .Refs > section a:link,
+    .Refs > section a:visited,
+    .Refs > section a:hover {
+      text-decoration: none;
+      color: inherit; }
+    .Refs > section p {
+      line-height: normal; }
+    .Refs > section:last-of-type {
+      padding: 7.5px; }
+      .Refs > section:last-of-type img {
+        height: 100%; }

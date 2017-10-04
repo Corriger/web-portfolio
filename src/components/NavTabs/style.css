@@ -30,10 +30,13 @@
   top: -45px;
   width: auto;
   display: block;
-  float: left;
-  font-family: monospace; }
+  float: left; }
 
 /*--- The Methods ---*/
+.TheMethods strong {
+  font-size: 1em;
+  letter-spacing: normal; }
+
 .TheMethods .lan {
   min-width: 320px;
   display: block;
@@ -47,15 +50,18 @@
 .TheCode header {
   max-height: 25%;
   width: 100%; }
-  .TheCode header > img {
+  .TheCode header img {
     display: block;
     width: 100px;
     margin: 0 auto; }
+    @media only screen and (max-width: 768px) {
+      .TheCode header img {
+        display: none; } }
   .TheCode header h2 {
     letter-spacing: normal;
     text-align: center; }
   .TheCode header section {
-    width: 50%;
+    width: 70%;
     padding: 0 10%;
     margin: 0 auto; }
     @media only screen and (max-width: 480px) {
@@ -72,35 +78,57 @@
   max-height: 75%;
   overflow-y: auto;
   overflow-x: hidden; }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     .TheCode > div {
       width: 100%; } }
   .TheCode > div > section {
     width: 100%;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #744589; }
+    .TheCode > div > section:last-of-type {
+      border-bottom: 0; }
     .TheCode > div > section img {
-      display: inline-block;
+      display: block;
+      float: left;
       margin-right: 30px;
-      max-height: 100px; }
-      @media only screen and (max-width: 480px) {
+      width: 30%; }
+      @media only screen and (max-width: 768px) {
         .TheCode > div > section img {
-          display: block;
-          margin: 0 auto; } }
+          float: none;
+          margin: 0 auto;
+          max-height: none;
+          width: 50%; } }
     .TheCode > div > section blockquote {
       display: inline-block;
-      width: calc(80% - 30px);
-      max-height: 100px;
+      top: 0;
+      left: 0;
+      padding: 0;
+      width: calc(70% - 30px);
+      min-height: 100px;
       font-style: italic;
-      margin-bottom: 15px; }
-      @media only screen and (max-width: 480px) {
+      margin-bottom: 15px;
+      color: white; }
+      @media only screen and (max-width: 768px) {
         .TheCode > div > section blockquote {
           width: 100%;
           text-align: center; } }
     .TheCode > div > section p {
+      margin-top: 15px;
+      display: block;
       clear: both; }
-      @media only screen and (max-width: 480px) {
-        .TheCode > div > section p {
-          text-align: center; } }
+      .TheCode > div > section p span, .TheCode > div > section p a:link, .TheCode > div > section p a:visited {
+        display: inline;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gold;
+        font-family: sans-serif; }
+      .TheCode > div > section p a:link,
+      .TheCode > div > section p a:visited {
+        text-transform: none;
+        text-decoration: none;
+        color: #744589;
+        font-weight: normal; }
 
 .TheCode aside {
   float: right;
@@ -108,12 +136,25 @@
   width: 30%;
   color: #744589;
   padding: 0 15px; }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 768px) {
     .TheCode aside {
       display: none; } }
-  .TheCode aside ul strong {
+  .TheCode aside strong {
     margin-bottom: 7.5px; }
+    @media only screen and (max-width: 992px) {
+      .TheCode aside strong {
+        letter-spacing: normal;
+        font-size: 1.2em; } }
   .TheCode aside ul li {
     font-style: italic;
     font-size: 0.8em;
     border-bottom: 1px solid #744589; }
+
+/*--- The Art ---*/
+.TheArt .current {
+  display: block; }
+
+.TheArt img {
+  display: inline-block;
+  margin: 7.5px;
+  height: 200px; }
