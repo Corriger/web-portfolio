@@ -1,5 +1,6 @@
 {
   "name": "web-portfolio",
+  "homepage": "http://corriger.github.io/web-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
