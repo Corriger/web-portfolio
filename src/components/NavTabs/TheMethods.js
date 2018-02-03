@@ -8,11 +8,14 @@ import js from './js.png'
 import jquery from './jquery.png'
 import react from './react.svg'
 import wp from './wp.png'
+import ruby from './ruby.png'
 // Coding
 import jsfiddle from './jsfiddle.png'
 import codepen from './codepen.png'
 import github from './github.png'
 import atom from './atom.png'
+import vscode from './vs-code.png'
+import repl from './repl.svg'
 import jsbin from './jsbin.png'
 // Images
 import pixlr from './pixlr.png'
@@ -35,12 +38,15 @@ class TheMethods extends Component{
           <img src={ jquery } alt=""/>
           <img src={ react } alt=""/>
           <img src={ wp } alt=""/>
+          <img src={ ruby } alt=""/>
         </div>
         <strong>Coding Platforms</strong>
         <div className="lan">
           <img src={ codepen } alt=""/>
           <img src={ github } alt=""/>
           <img src={ atom } alt=""/>
+          <img src={ vscode } alt=""/>
+          <img src={ repl } alt=""/>
           <img src={ jsbin } alt=""/>
           <img src={ jsfiddle } alt=""/>
         </div>

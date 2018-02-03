@@ -7,13 +7,26 @@ class TheCode extends Component{
     return(
       <div className="TheCode">
         <header>
-          <h2>Recent Work</h2>
+          <h2>Featured Work</h2>
           <section>
             <p>This site. It was made using React!</p>
-            <img src={ react } alt="react-logo"/>
           </section>
         </header>
         <div>
+        <section>
+            <a href="https://repl.it/@Corriger/Week-5" target="_blank" rel="noopener noreferrer"><img class="clearfix" src="https://repl.it/public/images/logo-small.png" alt=""/></a>
+            <blockquote cite="#">
+              "Can you guess who? It's a mystery!" &amp; other methods.
+            </blockquote>
+            <p>Essentially Guess Who towards the bottom, made with <span>Ruby</span>.</p>
+          </section>
+        <section>
+            <a href="https://repl.it/@Corriger/Week-2" target="_blank" rel="noopener noreferrer"><img class="clearfix" src="https://repl.it/public/images/logo-small.png" alt=""/></a>
+            <blockquote cite="#">
+              "Into the heat of battle! Go for it!"
+            </blockquote>
+            <p>Another simple Rock Paper Scissors, given the aesthetic of the basic mechanics in fighting games. Made with <span>Ruby</span>.</p>
+          </section>
           <section>
             <a href="http://friedagarciapark.com" target="_blank" rel="noopener noreferrer"><img class="clearfix" src="http://friedagarciapark.com/wp-content/themes/sage/assets/images/logo.png" alt=""/></a>
             <blockquote cite="http://friedagarciapark.com">
@@ -40,7 +53,7 @@ class TheCode extends Component{
             <blockquote cite="http://corriger.github.io/devil-hunter">
               The hunter shall surpass all who came before him...
             </blockquote>
-            <p>The site that kickstarted me into the path of a web developer. First instance of using <span>Javascript</span> - specifically the <span>jQuery</span> framework - to create the tab function up in the top right of the page. This was pre-Bootcamp, so it is far from responsive and not the most reuseable in terms of layout. But it, on top of my willingness to teach others that didn't know as much as me, got me into Resilient Coders in the first place.</p>
+            <p>The site that kickstarted me into the path of a web developer. First instance of using <span>Javascript</span> - specifically the <span>jQuery</span> library - to create the tab function up in the top right of the page. This was pre-Bootcamp, so it is far from responsive and not the most reuseable in terms of layout. But it, on top of my willingness to teach others that didn't know as much as me, got me into Resilient Coders in the first place.</p>
             <p>An improved, refactored version is on its way.</p>
           </section>
           <section>
@@ -54,10 +67,8 @@ class TheCode extends Component{
         <aside>
           <strong>Planned Projects</strong>
           <ul>
-            <li>The Legendary Devil Hunter -Redux-<br/>(jQuery; in progress)</li>
-            <li>Devil Heatmap<br/>(React)</li>
-            <li>Hymns of the World<br/>(Undecided)</li>
-            <li>Variety Gun Simulation<br/>(jQuery)</li>
+            <li>Devil Heatmap<br/>(React, D3)</li>
+            <li>Variety Gun Simulation<br/>(jQuery, CSS3 Animation)</li>
           </ul>
         </aside>
       </div>

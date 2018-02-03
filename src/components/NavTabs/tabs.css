@@ -7,7 +7,6 @@
   color: rgba(255,215,0,1);
   text-align: center;
   width: 25%;
-  float: left;
   display: inline-block;
   position: relative;
   list-style: none;
@@ -57,13 +56,14 @@
 .tabs{
   background: black;
   width: 100%;
-  float: right;
-  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 .react-tabs__tab-panel--selected>div{
   color: rgba(176,196,222,1);
   height: 70vh;
-  padding: 22.5px;
+  margin: 0 auto;
   overflow-y: auto;
   overflow-x: hidden;
 }

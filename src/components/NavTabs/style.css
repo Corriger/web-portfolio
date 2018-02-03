@@ -7,56 +7,61 @@
   margin: 0 auto; }
 
 /*--- The Guy ---*/
-.TheGuy img {
-  display: block;
-  width: 300px;
-  margin: 0 auto;
-  border-radius: 50%;
-  box-shadow: 0px 0px 30px lightsteelblue; }
-  @media only screen and (max-width: 480px) {
-    .TheGuy img {
-      width: 230px; } }
-
-.TheGuy h2 {
-  top: -60px;
-  line-height: normal;
-  letter-spacing: normal;
-  margin: 15px;
-  font-size: 2.5rem;
-  text-shadow: 0px 0px 20px #744589;
-  text-align: center; }
-
-.TheGuy p {
-  top: -45px;
-  width: auto;
-  display: block;
-  float: left; }
+.TheGuy {
+  display: flex;
+  flex-flow: column; }
+  .TheGuy img {
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px lightsteelblue; }
+    @media only screen and (max-width: 480px) {
+      .TheGuy img {
+        width: 160px; } }
+  .TheGuy h2 {
+    top: -60px;
+    line-height: normal;
+    letter-spacing: normal;
+    margin: 15px;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 20px #744589;
+    text-align: center; }
+    @media only screen and (max-width: 480px) {
+      .TheGuy h2 {
+        font-size: 1.7rem; } }
+  .TheGuy p {
+    top: -45px;
+    width: auto;
+    display: block;
+    float: left; }
 
 /*--- The Methods ---*/
-.TheMethods strong {
-  font-size: 1em;
-  letter-spacing: normal; }
-
-.TheMethods .lan {
-  min-width: 320px;
+.TheMethods {
   display: block;
-  height: auto; }
-  .TheMethods .lan img {
-    margin: 0;
-    margin-right: 15px;
-    height: 75px; }
+  flex-flow: column;
+  justify-content: center;
+  align-items: baseline; }
+  .TheMethods strong {
+    display: block;
+    font-size: 1em;
+    letter-spacing: normal;
+    padding: 3.75px; }
+  .TheMethods .lan {
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 320px; }
+    .TheMethods .lan img {
+      height: 75px;
+      padding: 3.75px; }
+      @media only screen and (max-width: 768px) {
+        .TheMethods .lan img {
+          height: 60px; } }
 
 /*--- The Code ---*/
 .TheCode header {
   max-height: 25%;
   width: 100%; }
-  .TheCode header img {
-    display: block;
-    width: 100px;
-    margin: 0 auto; }
-    @media only screen and (max-width: 768px) {
-      .TheCode header img {
-        display: none; } }
   .TheCode header h2 {
     letter-spacing: normal;
     text-align: center; }

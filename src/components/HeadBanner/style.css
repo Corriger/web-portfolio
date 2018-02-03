@@ -19,5 +19,5 @@ header {
     text-shadow: 0px 0px 4px black, 5px 0px 5px lightsteelblue, -5px 0px 5px lightsteelblue; }
     @media only screen and (max-width: 768px) {
       header h1 {
-        top: 10%;
+        top: 50%;
         letter-spacing: normal; } }
