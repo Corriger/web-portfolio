@@ -14,7 +14,7 @@ $tertiary: rgba(176,196,222,1)
   flex-flow: column
   img
     display: block
-    width: 30%
+    width: 20%
     margin: 20px auto
     border-radius: 50%
     box-shadow: 0px 0px 15px $tertiary
@@ -57,31 +57,17 @@ $tertiary: rgba(176,196,222,1)
         height: 60px
 /*--- The Code ---*/
 .TheCode
-  header
-    max-height: 25%
-    width: 100%
-    h2
-      letter-spacing: normal
-      text-align: center
-    section
-      width: 70%
-      padding: 0 10%
-      margin: 0 auto
-      @media only screen and (max-width: 480px)
-        width: 80%
-      p
-        text-align: center
-        display: block
-        color: $secondary
   & > div
     display: inline-block
-    width: 70%
-    max-height: 75%
+    width: 100%
+    height: 90%
     overflow-y: auto
     overflow-x: hidden
     @media only screen and (max-width: 768px)
       width: 100%
     & > section
+      display: flex
+      flex-flow: column
       width: 100%
       margin-bottom: 30px
       padding-bottom: 15px
@@ -90,8 +76,7 @@ $tertiary: rgba(176,196,222,1)
         border-bottom: 0
       img
         display: block
-        float: left
-        margin-right: 30px
+        margin: 7.5px auto
         width: 30%
         @media only screen and (max-width: 768px)
           float: none
@@ -104,7 +89,6 @@ $tertiary: rgba(176,196,222,1)
         left: 0
         padding: 0
         width: calc(70% - 30px)
-        min-height: 100px
         font-style: italic
         margin-bottom: 15px
         color: white

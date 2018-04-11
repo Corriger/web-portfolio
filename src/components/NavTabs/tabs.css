@@ -55,10 +55,12 @@
 /* --- General -- */
 .tabs{
   background: black;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  border-top: 2px solid yellow;
+  border-bottom: 2px solid yellow;
+  margin: 7.5px 0
 }
 .react-tabs__tab-panel--selected>div{
   color: rgba(176,196,222,1);

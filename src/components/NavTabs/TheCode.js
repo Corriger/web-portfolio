@@ -6,13 +6,21 @@ class TheCode extends Component{
   render(){
     return(
       <div className="TheCode">
-        <header>
-          <h2>Featured Work</h2>
-          <section>
-            <p>This site. It was made using React!</p>
-          </section>
-        </header>
         <div>
+        <section>
+            <a href="http://www.thelennyzakimfund.org/" target="_blank" rel="noopener noreferrer"><img class="clearfix" src="http://www.thelennyzakimfund.org/wp-content/themes/sage/dist/images/lzf-logo.svg" alt=""/></a>
+            <blockquote cite="https://www.benjaminzander.org/">
+            "Deeply committed to social justice and to the fundamental rights and dignity of all people, The Lenny Zakim Fund changes the course of people’s lives.            
+            </blockquote>
+            <p>A client project done using <span>Wordpress with the Roots/Sage framework</span>.</p>
+          </section>
+        <section>
+            <a href="https://www.benjaminzander.org/" target="_blank" rel="noopener noreferrer"><img class="clearfix" src="https://www.benjaminzander.org/wp-content/themes/sage/dist/images/logo.png" alt=""/></a>
+            <blockquote cite="https://www.benjaminzander.org/">
+              "Forging transformative pathways to human growth through the musical teachings of Benjamin Zander."
+            </blockquote>
+            <p>A client project done using <span>Wordpress with the Roots/Sage framework</span>.</p>
+          </section>
         <section>
             <a href="https://repl.it/@Corriger/Week-5" target="_blank" rel="noopener noreferrer"><img class="clearfix" src="https://repl.it/public/images/logo-small.png" alt=""/></a>
             <blockquote cite="#">
@@ -32,7 +40,7 @@ class TheCode extends Component{
             <blockquote cite="http://friedagarciapark.com">
               The mission of The Friends of Frieda Garcia Park is to care for the park and to provide programming that welcomes children and residents of the rich, diverse backgrounds of Boston’s neighborhoods.
             </blockquote>
-            <p>Originally a project divided among three people and redone for use with Wordpress's PHP library. The site uses <span>WordPress with the Sage framework</span> and is currently deployed on <span>DigitalOcean</span>.</p>
+            <p>Originally a project divided among three people and redone for use with Wordpress's PHP library. The site uses <span>WordPress with the Roots/Sage framework</span> and is currently deployed on <span>DigitalOcean</span>.</p>
           </section>
           <section>
             <a href="http://americascores.48in48sites.org/" target="_blank" rel="noopener noreferrer"><img class="clearfix" src="http://americascores.48in48sites.org/uploads/2017/06/AS-logo-1.png" alt=""/></a>
@@ -64,13 +72,6 @@ class TheCode extends Component{
             <p>A simple Rock-Paper-Scissors game. You choose what you throw, the function runs to respond with a random selection of its own.</p>
           </section>
         </div>
-        <aside>
-          <strong>Planned Projects</strong>
-          <ul>
-            <li>Devil Heatmap<br/>(React, D3)</li>
-            <li>Variety Gun Simulation<br/>(jQuery, CSS3 Animation)</li>
-          </ul>
-        </aside>
       </div>
     )
   }
