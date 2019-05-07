@@ -26,6 +26,7 @@ class TheArt extends Component{
         <img src={ hunterAndShadow } alt=""/>
         <img src={ rebellion } alt=""/>
         <img src={ swanHeron } alt=""/>
+        <img src={ hilda2 } alt=""/>
         <img src={ hilda1 } alt=""/>
         <img src={ hilda17 } alt=""/>
         <img src={ blazigijinka } alt=""/>
