@@ -62,9 +62,8 @@
   margin: 7.5px 0 0;
 }
 .react-tabs__tab-panel--selected>div{
-  display: flex;
   color: rgba(176,196,222,1);
-  height: 70vh;
+  height: calc(80vh - 7.5px);
   margin: 0 auto;
   overflow: auto;
 }
