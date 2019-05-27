@@ -1,0 +1,149 @@
+/*--- General ---*/
+.TheGuy,
+.TheMethods,
+.TheCode,
+.TheArt {
+  margin: 0 auto; }
+
+/*--- The Guy ---*/
+.TheGuy {
+  display: flex;
+  align-items: center;
+  flex-flow: column; }
+  .TheGuy img {
+    display: block;
+    width: 20%;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px lightsteelblue; }
+    @media only screen and (max-width: 480px) {
+      .TheGuy img {
+        width: 160px; } }
+  .TheGuy h3 {
+    line-height: normal;
+    letter-spacing: normal;
+    text-shadow: 0px 0px 20px #744589;
+    margin: 0 auto;
+    text-align: center; }
+    @media only screen and (max-width: 480px) {
+      .TheGuy h3 {
+        font-size: 1.7rem; } }
+  .TheGuy a>img{
+    width: 50px;
+  }
+  .TheGuy p {
+    width: 85%;
+    display: block;
+  }
+
+/*--- The Methods ---*/
+.TheMethods {
+  display: block;
+  flex-flow: column;
+  justify-content: center;
+  align-items: baseline; }
+  .TheMethods strong {
+    display: block;
+    font-size: 1em;
+    letter-spacing: normal;
+    padding: 3.75px; }
+  .TheMethods .lan {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end; }
+    .TheMethods .lan img {
+      height: 75px;
+      padding: 3.75px; }
+      @media only screen and (max-width: 768px) {
+        .TheMethods .lan img {
+          height: 60px; } }
+
+/*--- The Code ---*/
+.TheCode > div {
+  padding: 7.5px;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .TheCode > div > section {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    padding: 0 0 30px;
+    border-bottom: 2px solid #744589; }
+    .TheCode > div > section:last-of-type {
+      border-bottom: 0; }
+    .TheCode > div > section img {
+      display: block;
+      margin: 7.5px auto;
+      width: 75%;
+      max-width: 200px;
+      height: auto; }
+      @media only screen and (max-width: 768px) {
+        .TheCode > div > section img {
+          float: none;
+          margin: 0 auto; } }
+    .TheCode > div > section blockquote {
+      display: inline-block;
+      top: 0;
+      left: 0;
+      padding: 0;
+      width: calc(70% - 30px);
+      font-style: italic;
+      margin: 0 0 15px;
+      color: white; }
+      @media only screen and (max-width: 768px) {
+        .TheCode > div > section blockquote {
+          width: 100%;
+          text-align: center; } }
+    .TheCode > div > section p {
+      margin-top: 15px;
+      padding: 0 15px;
+      display: block;
+      clear: both; }
+      .TheCode > div > section p span, .TheCode > div > section p a:link, .TheCode > div > section p a:visited {
+        display: inline;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gold;
+        font-family: sans-serif; }
+      .TheCode > div > section p a:link,
+      .TheCode > div > section p a:visited {
+        text-transform: none;
+        text-decoration: none;
+        color: #744589;
+        font-weight: normal; }
+
+.TheCode aside {
+  float: right;
+  display: inline-block;
+  width: 30%;
+  color: #744589;
+  padding: 0 15px; }
+  @media only screen and (max-width: 768px) {
+    .TheCode aside {
+      display: none; } }
+  .TheCode aside strong {
+    margin-bottom: 7.5px; }
+    @media only screen and (max-width: 992px) {
+      .TheCode aside strong {
+        letter-spacing: normal;
+        font-size: 1.2em; } }
+  .TheCode aside ul li {
+    font-style: italic;
+    font-size: 0.8em;
+    border-bottom: 1px solid #744589; }
+
+/*--- The Art ---*/
+.TheArt{
+  display: flex;
+}
+.TheArt .current {
+  display: block; }
+
+.TheArt img {
+  display: inline-block;
+  height: 100%; }
