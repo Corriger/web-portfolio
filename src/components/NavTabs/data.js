@@ -1,5 +1,4 @@
-export default {
-  projects: [
+export default [
     {
       href: "http://www.thelennyzakimfund.org/",
       logo: "http://www.thelennyzakimfund.org/wp-content/themes/sage/dist/images/lzf-logo.svg",
@@ -30,5 +29,4 @@ export default {
       logo: "http://i.imgur.com/9bDUpCs.png",
       quote: "The hunter shall surpass all who came before him..."
     },
-  ]
-}
+]
