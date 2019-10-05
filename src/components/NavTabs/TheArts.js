@@ -2,23 +2,32 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 // Note to Self: figure out webpack
+const Image = styled.img`
+  width: 15%;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+`
 
 function importAll(r) {
-  let images = {}
+  let images = []
   r.keys().map(
-    (item, index) => { return images[item.replace('./', '')] = r(item) }
+    (item) => { return images[item.replace('./', '')] = r(item) }
   )
+  console.log(images)
   return images
 }
 
 class TheArts extends Component {
   render(){
-    const images = importAll(require.context('./img', false, /\.(png|jpe?g|svg)$/))
+    let images = importAll(require.context('./img', false, /\.(png|jpe?g|svg)$/))
     return(
       <div>
         { images.map(
-          (imgName) => {
-            return <img src={ images[imgName] } alt="butt"/>
+          (imgName, i) => {
+            return <a href={ "./"+imgName }>
+              <Image src={ "./"+imgName[i] } alt={ imgName[i] }/>
+            </a>
         })
         }
       </div>
