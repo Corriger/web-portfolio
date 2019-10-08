@@ -28,9 +28,9 @@ const SiteLogo = styled.img`
   object-fit: contain;
   object-position: center;
   height: 90px;
-  width: 100%;
   @media only screen and (max-width: 768px){
     margin: 0 auto;
+    width: 100%;
   }
 `
 const SiteQuote = styled.blockquote`
@@ -88,7 +88,7 @@ class TheCode extends Component {
           { projects.map(
             (project, i) => {
             return <SubArticle>
-              <a href={ projects[i].href }>
+              <a href={ projects[i].href } target="_blank" rel="noopener no referrer">
                 <SiteLogo src={ projects[i].logo }/>
               </a>
               <SiteQuote>{ projects[i].quote }</SiteQuote>
