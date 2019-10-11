@@ -5,17 +5,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Img = styled.img`
   display: block;
-  width: 20%;
-  margin: 20px auto;
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(176,196,222,1);
+  margin: 15px 0;
+  border-radius: 50% 5px 5px 5px;
+  box-shadow: 10px 10px 20px rgba(176,196,222,1);
+  width: 40%;
+  height: calc(80% - 60px);
+  object-fit: cover;
+  object-position: center;
 `
 const ContactInfo = styled.section`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 60px;
+  width: 40%;
 `
 const Affiliates = styled(ContactInfo)`
   align-items: flex-end;
@@ -43,10 +45,10 @@ class TheGuy extends Component {
       <div>
         <Img src={ face }/>
         <ContactInfo>
-          <FontAwesomeIcon icon={ ['fas','at'] } size="3x" />
-          <FontAwesomeIcon icon={ ['fab','github']  } size="3x" />
-          <FontAwesomeIcon icon={ ['fas','phone']  } size="3x" />
-          <FontAwesomeIcon icon={ ['fab','linkedin']  } size="3x" />
+          <a href="mailto:rsmoraldo2@gmail.com"><FontAwesomeIcon icon={ ['fas','at'] } size="3x" /></a>
+          <a href="https://github.com/Corriger"><FontAwesomeIcon icon={ ['fab','github']  } size="3x" /></a>
+          <a href="tel:+16176997450"><FontAwesomeIcon icon={ ['fas','phone']  } size="3x" /></a>
+          <a href="https://www.linkedin.com/in/roger-moraldo-00a646122/"><FontAwesomeIcon icon={ ['fab','linkedin']  } size="3x" /></a>
         </ContactInfo>
         <Affiliates>
           { company.map(
