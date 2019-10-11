@@ -19,7 +19,6 @@
   color: rgba(176,196,222,1);
   display: block;
   font-weight: bolder;
-  border-radius: 5px 5px 0 0;
   text-shadow: 0px 0px 4px black, 7px 0px 5px rgba(176,196,222,1), -7px 0px 5px rgba(176,196,222,1);
 }
 .react-tabs__tab--selected:hover{
@@ -63,9 +62,10 @@
 }
 .react-tabs__tab-panel--selected>div{
   color: rgba(176,196,222,1);
-  height: calc(80vh - 7.5px);
+  height: 80vh;
   margin: 0 auto;
   overflow: auto;
+  padding: 0 22.5px;
 }
 @media only screen and (max-width: 480px){
   .react-tabs__tab{
