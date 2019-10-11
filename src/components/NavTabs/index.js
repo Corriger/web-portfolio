@@ -7,6 +7,7 @@ import {
 } from 'react-tabs'
 import TheCode from './TheCode.js'
 import TheArts from './TheArts.js'
+import TheGuy from './TheGuy.js'
 import './tabs.css'
 
 class NavTabs extends Component{
