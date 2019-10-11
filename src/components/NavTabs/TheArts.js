@@ -20,7 +20,7 @@ function importAll(r) {
 
 class TheArts extends Component {
   render(){
-    let images = importAll(require.context('./img', false, /\.(png|jpe?g|svg)$/))
+    let images = importAll(require.context('./art', false, /\.(png|jpe?g|svg)$/))
     return(
       <div>
         { images.map(
