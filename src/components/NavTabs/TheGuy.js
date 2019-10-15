@@ -11,11 +11,9 @@ import aaca from './bzn/aaca-boston.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const ContactInfo = styled.figure`
-  position: absolute;
   background: black;
-  border-right: 3px solid rgba(255,215,0,1);
+  border-right: 2px solid rgba(255,215,0,1);
   width: 25%;
-  max-width: 360px;
   height: 100%;
 `
 const ContactImg = styled.img`
@@ -23,8 +21,10 @@ const ContactImg = styled.img`
   top: 0;
   left: 0;
   display: block;
-  border-bottom: 3px solid rgba(255,215,0,1);
+  border-bottom: 2px solid rgba(255,215,0,1);
   width: 100%;
+  height: 45%;
+  object-fit: cover;
 `
 const Links = styled.figcaption`
   display: flex;
@@ -40,9 +40,6 @@ const ContactType = styled.span`
   font-style: italic;
 `
 const Affiliates = styled.section`
-  position: absolute;
-  left: 0;
-  bottom: 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
@@ -55,11 +52,21 @@ const Company = styled.img`
   object-fit: contain;
   object-position: center;
 `
+const AutoBio = styled(ContactInfo)`
+  padding: 5%;
+  width: 75%;
+  border-right: none;
+  background: rgba(0,0,0,.5);
+  color: rgba(255,255,255,1);
+`
 
 class TheGuy extends Component {
   render(){
     return(
-      <div>
+      <div style={{
+        display: 'flex',
+        flexFlow: 'row wrap'
+      }}>
         <ContactInfo>
         <ContactImg src={ face }/>
           <Links>
@@ -85,6 +92,9 @@ class TheGuy extends Component {
             <a href="https://aaca-boston.org" target="_blank" rel="noopener noreferrer"><Company src={ aaca } alt="asian american civic association boston"></Company></a>
           </Affiliates>
         </ContactInfo>
+        <AutoBio as="section">
+          <p>Testing</p>
+        </AutoBio>
       </div>
     )
   }
