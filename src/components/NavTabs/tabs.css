@@ -61,11 +61,12 @@
   height: 6vh;
 }
 .react-tabs__tab-panel--selected>div{
-  color: rgba(176,196,222,1);
+  background: rgba(0,0,0,.5);
   height: 84vh;
   margin: 0 auto;
   overflow: auto;
   padding: 0;
+  color: rgba(176,196,222,1);
 }
 @media only screen and (max-width: 480px){
   .react-tabs__tab{
