@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import face from './misc/me.933bd7b3.png'
+import logo from './../imgs/misc/logo.png'
 
-import resume from './misc/Resume-9-28.pdf'
+import resume from './Resume-9-28.pdf'
 
-import resilient from './bzn/resilient-coders.png'
-import nanigans from './bzn/nanigans.png'
-import aaca from './bzn/aaca-boston.jpg'
+import resilient from './../imgs/bzn/resilient-coders.png'
+import nanigans from './../imgs/bzn/nanigans.png'
+import aaca from './../imgs/bzn/aaca-boston.jpg'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -53,11 +54,25 @@ const Company = styled.img`
   object-position: center;
 `
 const AutoBio = styled(ContactInfo)`
+  background: rgba(0,0,0,.5);
   padding: 5%;
   width: 75%;
   border-right: none;
-  background: rgba(0,0,0,.5);
   color: rgba(255,255,255,1);
+  &:after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(${logo});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    content: "";
+    opacity: 1;
+    z-index: -1;
+  }
 `
 
 class TheGuy extends Component {
