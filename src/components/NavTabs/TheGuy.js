@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import face from './misc/me.933bd7b3.png'
+
+import resume from './misc/Resume-9-28.pdf'
+
+import resilient from './bzn/resilient-coders.png'
+import nanigans from './bzn/nanigans.png'
+import aaca from './bzn/aaca-boston.jpg'
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const ContactInfo = styled.figure`
@@ -36,29 +43,21 @@ const Affiliates = styled.section`
   position: absolute;
   left: 0;
   bottom: 0;
+  display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  width: 100%;
   border-right: none;
 `
 const Company = styled.img`
-  height: 15px;
-  width: 15px;
+  height: 30px;
+  width: 30px;
   object-fit: contain;
   object-position: center;
 `
 
-function importAll(r) {
-  let images = []
-  r.keys().map(
-    (item) => { return images[item.replace('./', '')] = r(item) }
-  )
-  console.log(images)
-  return images
-}
-
 class TheGuy extends Component {
   render(){
-    let company = importAll(require.context('./bzn', false, /\.(png|jpe?g|svg)$/))
     return(
       <div>
         <ContactInfo>
@@ -76,18 +75,14 @@ class TheGuy extends Component {
             <a style={ { marginBottom: '15px' } } href="https://www.linkedin.com/in/roger-moraldo-00a646122/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab','linkedin']  } size="3x" />
             <ContactType>Roger Moraldo</ContactType>
             </a>
-            <a style={ { marginBottom: '15px' } } href="./misc/Resume-9-28.pdf" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fas','file']  } size="3x" />
+            <a style={ { marginBottom: '15px' } } href={ resume } target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fas','file']  } size="3x" />
             <ContactType>Résumé</ContactType>
             </a>
           </Links>
           <Affiliates as="section">
-          { company.map(
-            (bznName, i) => {
-              return <a href={ "./"+bznName }>
-              <Company src={ "./"+bznName[i] } alt={ bznName[i] }/>
-              </a>
-            })
-          }
+            <a href="https://www.resilientcoders.org/" target="_blank" rel="noopener noreferrer"><Company src={ resilient } alt="resilient coders"></Company></a>
+            <a href="https://www.nanigans.com/" target="_blank" rel="noopener noreferrer"><Company src={ nanigans } alt="nanigans"></Company></a>
+            <a href="https://aaca-boston.org" target="_blank" rel="noopener noreferrer"><Company src={ aaca } alt="asian american civic association boston"></Company></a>
           </Affiliates>
         </ContactInfo>
       </div>
