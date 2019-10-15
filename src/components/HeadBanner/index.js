@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import logo from './logo.png'
 
 const Header = styled.header`
   display: flex;
@@ -8,15 +7,6 @@ const Header = styled.header`
   align-items: center;
   width: 100%;
   height: 10vh;
-`
-const BackImage = styled.img`
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  height: calc(100% - 15px);
-  opacity: .7;
 `
 const Text = styled.h1`
   width: 100%;
@@ -34,7 +24,6 @@ class HeadBanner extends Component {
     return(
       <div>
         <Header>
-          <BackImage src={ logo }/>
           <Text>Professional Playground</Text>
         </Header>
       </div>
