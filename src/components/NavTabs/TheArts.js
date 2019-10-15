@@ -20,14 +20,13 @@ function importAll(r) {
 
 class TheArts extends Component {
   render(){
-    let images = importAll(require.context('./art', false, /\.(png|jpe?g|svg)$/))
+    let images = importAll(require.context('./../imgs/art', false, /\.(png|jpe?g|svg)$/))
+    
     return(
       <div>
         { images.map(
-          (imgName, i) => {
-            return <a href={ "./"+imgName }>
-              <Image src={ "./"+imgName[i] } alt={ imgName[i] }/>
-            </a>
+          (imgName) => {
+            return <a href={ "./"+imgName }><Image src={ "./"+imgName } alt={ imgName }/></a>
         })
         }
       </div>
