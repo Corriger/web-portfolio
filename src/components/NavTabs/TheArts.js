@@ -12,23 +12,21 @@ const Image = styled.img`
 function importAll(r) {
   let images = []
   r.keys().map(
-    (item) => { return images[item.replace('./', '')] = r(item) }
+    (item) => { return images[item.replace('./', '')] = images.push(r(item)) }
   )
-  console.log(images)
   return images
 }
 
 class TheArts extends Component {
   render(){
-    let images = importAll(require.context('./../imgs/art', false, /\.(png|jpe?g|svg)$/))
-    
+    const artwork = importAll(require.context('./../imgs/art', false, /\.(png|jpe?g|svg)$/))
+    console.log(artwork)
     return(
       <div>
-        { images.map(
-          (imgName) => {
-            return <a href={ "./"+imgName }><Image src={ "./"+imgName } alt={ imgName }/></a>
-        })
-        }
+      { artwork.map(
+        (artItem) => {
+        return <Image src={ artItem }/>
+      })}
       </div>
     )
   }
