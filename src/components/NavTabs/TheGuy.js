@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import face from './misc/me.933bd7b3.png'
+import face from './../imgs/misc/me.933bd7b3.png'
 import logo from './../imgs/misc/logo.png'
 
 import resume from './Resume-9-28.pdf'
