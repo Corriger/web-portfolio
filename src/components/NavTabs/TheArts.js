@@ -3,10 +3,12 @@ import styled from 'styled-components'
 
 // Note to Self: figure out webpack
 const Image = styled.img`
-  width: 15%;
+  margin: 10px;
+  padding: 5px;
   height: 150px;
-  object-fit: contain;
-  object-position: center;
+  &:hover{
+    box-shadow: 0px 10px 5px rgba(176,196,222,1);
+  }
 `
 
 function importAll(r) {
@@ -25,7 +27,7 @@ class TheArts extends Component {
       <div>
       { artwork.map(
         (artItem) => {
-        return <Image src={ artItem }/>
+        return <a href={ artItem } target="_blank" rel="noopener noreferrer"><Image src={ artItem }/></a>
       })}
       </div>
     )
