@@ -88,19 +88,19 @@ class TheGuy extends Component {
         <ContactInfo>
         <ContactImg src={ face }/>
           <Links>
-            <a style={ { marginBottom: '15px' } } href="mailto:rsmoraldo2@gmail.com"><FontAwesomeIcon icon={ ['fas','at'] } size="3x" />
+            <a style={ { marginBottom: '15px' } } href="mailto:rsmoraldo2@gmail.com"><FontAwesomeIcon icon={ ['fas','at'] } size="2x" />
             <ContactType>rsmoraldo2@gmail.com</ContactType>
             </a>
-            <a style={ { marginBottom: '15px' } } href="tel:+16176997450"><FontAwesomeIcon icon={ ['fas','phone']  } size="3x" />
+            <a style={ { marginBottom: '15px' } } href="tel:+16176997450"><FontAwesomeIcon icon={ ['fas','phone']  } size="2x" />
             <ContactType>(617) 699-7450</ContactType>
             </a>
-            <a style={ { marginBottom: '15px' } } href="https://github.com/Corriger" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab','github']  } size="3x" />
+            <a style={ { marginBottom: '15px' } } href="https://github.com/Corriger" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab','github']  } size="2x" />
             <ContactType>Corriger (Roger M)</ContactType>
             </a>
-            <a style={ { marginBottom: '15px' } } href="https://www.linkedin.com/in/roger-moraldo-00a646122/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab','linkedin']  } size="3x" />
+            <a style={ { marginBottom: '15px' } } href="https://www.linkedin.com/in/roger-moraldo-00a646122/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab','linkedin']  } size="2x" />
             <ContactType>Roger Moraldo</ContactType>
             </a>
-            <a style={ { marginBottom: '15px' } } href={ resume } target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fas','file']  } size="3x" />
+            <a style={ { marginBottom: '15px' } } href={ resume } target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fas','file']  } size="2x" />
             <ContactType>Résumé</ContactType>
             </a>
           </Links>
