@@ -1,1 +1,39 @@
-"use strict";function setOfCachedUrls(e){return e.keys().then(function(e){return e.map(function(e){return e.url})}).then(function(e){return new Set(e)})}var precacheConfig=[["/web-portfolio/index.html","fe678ea416519b13c67fe95547ea710c"],["/web-portfolio/static/css/main.e89c6194.css","0c40a5c0cf15aa6b0ea7f99cc5649e7b"],["/web-portfolio/static/js/main.461874ea.js","11b65c6de449326981c794f627a13ce6"],["/web-portfolio/static/media/a2-art.b54126f0.png","b54126f01dd5d780faf3a1dca72357cf"],["/web-portfolio/static/media/atom.e8d74201.png","e8d742013ddbff7972436e30f0a942a4"],["/web-portfolio/static/media/blazigijinka.11093652.png","110936527c4ef1c29bb202c151495dee"],["/web-portfolio/static/media/dante-dt.40d56194.png","40d561942d99f4d085d7f22fdf61d4c6"],["/web-portfolio/static/media/dt-016.899942c4.png","899942c4ca3766be724324cda2e06cd2"],["/web-portfolio/static/media/figma.bf9cabee.png","bf9cabee3d879761ece47de871fa748a"],["/web-portfolio/static/media/gimp.d3cd0783.png","d3cd078357186ed8e9adacb4bb9ea323"],["/web-portfolio/static/media/hilda-016.d1139a28.png","d1139a28ecfef6359a0675be60dfb338"],["/web-portfolio/static/media/hilda-1.0ee7b815.png","0ee7b815033ae4ac0d657fd2c1d34673"],["/web-portfolio/static/media/hilda-2.d9616243.png","d96162435b9a98da8699cd493ec437c3"],["/web-portfolio/static/media/hilda-devil.ee1bf7c7.png","ee1bf7c7fdab7f0401c5e4774ff66140"],["/web-portfolio/static/media/hilda-kimono.7cc1c9f5.png","7cc1c9f59e49c2c7926dc3e26bbe7bfe"],["/web-portfolio/static/media/hilda-sitting.16a7ed60.png","16a7ed60eba5c7109647350c1d1aebf9"],["/web-portfolio/static/media/hilda-training.affd916c.png","affd916ce7bd152148e45ec12b1d453d"],["/web-portfolio/static/media/hunter and shadow.fc770e6b.png","fc770e6b297a9f69d1103a43f2783259"],["/web-portfolio/static/media/js.8bea508e.png","8bea508e2c3b93365a20aef34d7f86d9"],["/web-portfolio/static/media/jsbin.b36178e5.png","b36178e5ec87a6d8c573bf3d629cb1c1"],["/web-portfolio/static/media/me.933bd7b3.png","933bd7b39684e813d6be8c4d1b70858f"],["/web-portfolio/static/media/pixlr.0e0da207.png","0e0da207bdd2866a111bd3a731f2b7fb"],["/web-portfolio/static/media/private dick 2 shot.4ce374e1.png","4ce374e150ff24bf12e4dbe4d53791f8"],["/web-portfolio/static/media/react.df72e8b5.svg","df72e8b543a748c91aa8034c3021bae6"],["/web-portfolio/static/media/rebellion.26821788.png","2682178882ebefac6ae9283a7d4af97d"],["/web-portfolio/static/media/repl.9d233541.svg","9d233541e65f8748c54a0f9d6f986922"],["/web-portfolio/static/media/resume.bedebac1.pdf","bedebac1234c24e4c3ff0eb84eb49b97"],["/web-portfolio/static/media/sai.9c61abac.png","9c61abac5932f61b95f29c03bdf091f1"],["/web-portfolio/static/media/swan-heron-dnd.cf187815.png","cf187815259b1976768cfd5d5387e0bd"],["/web-portfolio/static/media/terror-016.e1328545.jpg","e132854563b75b03111798dfbb5001d7"],["/web-portfolio/static/media/terror-redo.c18a0a71.png","c18a0a71f53987f71154ee27bc546a3c"],["/web-portfolio/static/media/vs-code.f4fd51d7.png","f4fd51d7717ffe3d26eff10d7402abe4"],["/web-portfolio/static/media/wp.77c1438e.png","77c1438e21979f1a00f41d2ee76362ec"]],cacheName="sw-precache-v3-sw-precache-webpack-plugin-"+(self.registration?self.registration.scope:""),ignoreUrlParametersMatching=[/^utm_/],addDirectoryIndex=function(e,t){var a=new URL(e);return"/"===a.pathname.slice(-1)&&(a.pathname+=t),a.toString()},cleanResponse=function(e){return e.redirected?("body"in e?Promise.resolve(e.body):e.blob()).then(function(t){return new Response(t,{headers:e.headers,status:e.status,statusText:e.statusText})}):Promise.resolve(e)},createCacheKey=function(e,t,a,c){var i=new URL(e);return c&&i.pathname.match(c)||(i.search+=(i.search?"&":"")+encodeURIComponent(t)+"="+encodeURIComponent(a)),i.toString()},isPathWhitelisted=function(e,t){if(0===e.length)return!0;var a=new URL(t).pathname;return e.some(function(e){return a.match(e)})},stripIgnoredUrlParameters=function(e,t){var a=new URL(e);return a.hash="",a.search=a.search.slice(1).split("&").map(function(e){return e.split("=")}).filter(function(e){return t.every(function(t){return!t.test(e[0])})}).map(function(e){return e.join("=")}).join("&"),a.toString()},hashParamName="_sw-precache",urlsToCacheKeys=new Map(precacheConfig.map(function(e){var t=e[0],a=e[1],c=new URL(t,self.location),i=createCacheKey(c,hashParamName,a,/\.\w{8}\./);return[c.toString(),i]}));self.addEventListener("install",function(e){e.waitUntil(caches.open(cacheName).then(function(e){return setOfCachedUrls(e).then(function(t){return Promise.all(Array.from(urlsToCacheKeys.values()).map(function(a){if(!t.has(a)){var c=new Request(a,{credentials:"same-origin"});return fetch(c).then(function(t){if(!t.ok)throw new Error("Request for "+a+" returned a response with status "+t.status);return cleanResponse(t).then(function(t){return e.put(a,t)})})}}))})}).then(function(){return self.skipWaiting()}))}),self.addEventListener("activate",function(e){var t=new Set(urlsToCacheKeys.values());e.waitUntil(caches.open(cacheName).then(function(e){return e.keys().then(function(a){return Promise.all(a.map(function(a){if(!t.has(a.url))return e.delete(a)}))})}).then(function(){return self.clients.claim()}))}),self.addEventListener("fetch",function(e){if("GET"===e.request.method){var t,a=stripIgnoredUrlParameters(e.request.url,ignoreUrlParametersMatching);(t=urlsToCacheKeys.has(a))||(a=addDirectoryIndex(a,"index.html"),t=urlsToCacheKeys.has(a));!t&&"navigate"===e.request.mode&&isPathWhitelisted(["^(?!\\/__).*"],e.request.url)&&(a=new URL("/web-portfolio/index.html",self.location).toString(),t=urlsToCacheKeys.has(a)),t&&e.respondWith(caches.open(cacheName).then(function(e){return e.match(urlsToCacheKeys.get(a)).then(function(e){if(e)return e;throw Error("The cached response that was expected is missing.")})}).catch(function(t){return console.warn('Couldn\'t serve response for "%s" from cache: %O',e.request.url,t),fetch(e.request)}))}});
+/**
+ * Welcome to your Workbox-powered service worker!
+ *
+ * You'll need to register this file in your web app and you should
+ * disable HTTP caching for this file too.
+ * See https://goo.gl/nhQhGp
+ *
+ * The rest of the code is auto-generated. Please don't update this file
+ * directly; instead, make changes to your Workbox build configuration
+ * and re-run your build process.
+ * See https://goo.gl/2aRDsh
+ */
+
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+
+importScripts(
+  "/web-portfolio/precache-manifest.700367681af06ac162eed8338f8f4be4.js"
+);
+
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+
+workbox.core.clientsClaim();
+
+/**
+ * The workboxSW.precacheAndRoute() method efficiently caches and responds to
+ * requests for URLs in the manifest.
+ * See https://goo.gl/S9QRab
+ */
+self.__precacheManifest = [].concat(self.__precacheManifest || []);
+workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/web-portfolio/index.html"), {
+  
+  blacklist: [/^\/_/,/\/[^\/?]+\.[^\/]+$/],
+});
