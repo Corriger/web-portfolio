@@ -16,9 +16,9 @@ class NavTabs extends Component{
       <div>
         <Tabs>
           <TabList className="tabs">
-            <Tab>The<br/>Guy</Tab>
-            <Tab>The<br/>Code</Tab>
-            <Tab>The<br/>Arts</Tab>
+            <Tab>The Guy</Tab>
+            <Tab>The Code</Tab>
+            <Tab>The Arts</Tab>
           </TabList>
           <TabPanel><TheGuy/></TabPanel>
           <TabPanel><TheCode/></TabPanel>
