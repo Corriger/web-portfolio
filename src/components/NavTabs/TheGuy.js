@@ -18,14 +18,14 @@ const ContactInfo = styled.figure`
   height: 100%;
 `
 const ContactImg = styled.img`
-  position: relative;
-  top: 0;
-  left: 0;
   display: block;
   border-bottom: 2px solid rgba(255,215,0,1);
   width: 100%;
   height: 45%;
   object-fit: cover;
+  @media only screen and (max-width: 992px){
+    display: none;
+  }
 `
 const Links = styled.figcaption`
   display: flex;
@@ -39,6 +39,13 @@ const ContactType = styled.span`
   font-size: 15px;
   font-weight: bold;
   font-style: italic;
+  @media only screen and (max-width: 992px){
+    display: block;
+    padding: 0;
+  }
+  @media only screen and (max-width: 768px){
+    display: none;
+  }
 `
 const Affiliates = styled.section`
   display: flex;
@@ -46,10 +53,15 @@ const Affiliates = styled.section`
   justify-content: space-evenly;
   width: 100%;
   border-right: none;
+  @media only screen and (max-width: 480px){
+    flex-flow: column;
+
+    align-items: center;
+  }
 `
 const Company = styled.img`
-  height: 30px;
-  width: 30px;
+  height: 45px;
+  width: 45px;
   object-fit: contain;
   object-position: center;
 `
