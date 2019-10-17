@@ -67,7 +67,7 @@ const Company = styled.img`
 `
 const AutoBio = styled(ContactInfo)`
   background: rgba(0,0,0,.5);
-  padding: 5%;
+  padding: 2%;
   width: 75%;
   border-right: none;
   color: rgba(255,255,255,1);
