@@ -1,7 +1,22 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
+const SkillBanner = styled.header`
+  position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  background: rgba(0,0,0,1);
+  border-bottom: 2px solid rgba(255,215,0,1);
+  height: 60px;
+  width: 100%;
+  padding: 7.5px;
+  z-index: 999;
+`
+const SkillImg = styled.img`
+  height: 100%;
+`
 const SubSec = styled.section`
+  top: 60px;
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
@@ -78,12 +93,28 @@ let projects = [
 //     name: ""
 //   }
 // ]
+function importAll(r) {
+  let images = []
+  r.keys().map(
+    (item) => { return images[item.replace('./', '')] = images.push(r(item)) }
+  )
+  return images
+}
 
 class TheCode extends Component {
   render(){
+    const technology = importAll(require.context('./../imgs/lngs', false, /\.(png|jpe?g|svg)$/))
     return(
       <div className="TheCode">
         <div>
+        <SkillBanner>
+        { technology.map(
+          (tech) => {
+          return <SkillImg src={ tech }/>
+          })
+        }
+        </SkillBanner>
+
           <SubSec>
           { projects.map(
             (project, i) => {
