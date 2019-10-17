@@ -20,6 +20,7 @@ const SubSec = styled.section`
   overflow-y: auto;
   overflow-x: hidden;
   width: 100%;
+  height: calc(100% - 30px);
   @media only screen and (max-width: 768px){
     width: 100%;
   }

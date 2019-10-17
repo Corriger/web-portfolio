@@ -55,36 +55,27 @@ const Affiliates = styled.section`
   border-right: none;
   @media only screen and (max-width: 480px){
     flex-flow: column;
-
     align-items: center;
   }
 `
 const Company = styled.img`
-  height: 45px;
-  width: 45px;
+  height: 30px;
+  width: 30px;
   object-fit: contain;
   object-position: center;
 `
 const AutoBio = styled(ContactInfo)`
   background: rgba(0,0,0,.5);
-  padding: 2%;
+  padding: 30px;
   width: 75%;
   border-right: none;
   color: rgba(255,255,255,1);
-  &:after{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: url(${logo});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    content: "";
-    opacity: 1;
-    z-index: -1;
-  }
+  overflow-y: auto;
+`
+const Para = styled.p`
+  display: block;
+  padding: 15px;
+  font-size: 1em;
 `
 
 class TheGuy extends Component {
@@ -120,7 +111,9 @@ class TheGuy extends Component {
           </Affiliates>
         </ContactInfo>
         <AutoBio as="section">
-          <p>Testing</p>
+        <Para>I'm one of the eldest of the first generation Trinidadians in my family, born and primarily raised in Boston MA. While I don't have an aversion to physical activity I have always found more comfort in the written word and the blank canvas of paper and pen(cil), creating shape and scripture since I was able.</Para>
+        <Para>My introduction to the wonderful world of the Web came when I was about as young as 10 or 12, and I found myself revisiting it during a leisurely dive into roleplaying when I wanted to portray my characters in a more cohesive light during my junior year, exercising my penchant for design and diction. Seven years since I was finally allowed an opportunity to train under and work with Resilient Coders to become the professionally-driven developer that I am now, with a heavier focus on the aesthetic appeal and accessibility of user-side interactions.</Para>
+        <Para>My foray into software development stems from my love of speculative fiction, a genre that always struck me as the best conduit for experimentation with wordplay, concepts and philosophies. To me, software development encompasses the same malleability that can keep my mind sharp even into my more age-addled years, and I don't see myself straying from it anytime soon.</Para>
         </AutoBio>
       </div>
     )
