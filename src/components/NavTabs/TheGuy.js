@@ -70,6 +70,7 @@ const AutoBio = styled(ContactInfo)`
   width: 75%;
   border-right: none;
   color: rgba(255,255,255,1);
+  overflow-x: hidden;
   overflow-y: auto;
 `
 const Para = styled.p`
@@ -88,19 +89,19 @@ class TheGuy extends Component {
         <ContactInfo>
         <ContactImg src={ face }/>
           <Links>
-            <a style={ { marginBottom: '15px' } } href="mailto:rsmoraldo2@gmail.com"><FontAwesomeIcon icon={ ['fas','at'] } size="2x" />
+            <a style={ { marginBottom: '15px' } } href="mailto:rsmoraldo2@gmail.com"><FontAwesomeIcon icon={ ['fas','at'] } size="2x"/>
             <ContactType>rsmoraldo2@gmail.com</ContactType>
             </a>
-            <a style={ { marginBottom: '15px' } } href="tel:+16176997450"><FontAwesomeIcon icon={ ['fas','phone']  } size="2x" />
+            <a style={ { marginBottom: '15px' } } href="tel:+16176997450"><FontAwesomeIcon icon={ ['fas','phone']  } size="2x"/>
             <ContactType>(617) 699-7450</ContactType>
             </a>
-            <a style={ { marginBottom: '15px' } } href="https://github.com/Corriger" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab','github']  } size="2x" />
+            <a style={ { marginBottom: '15px' } } href="https://github.com/Corriger" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab','github']  } size="2x"/>
             <ContactType>Corriger (Roger M)</ContactType>
             </a>
-            <a style={ { marginBottom: '15px' } } href="https://www.linkedin.com/in/roger-moraldo-00a646122/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab','linkedin']  } size="2x" />
+            <a style={ { marginBottom: '15px' } } href="https://www.linkedin.com/in/roger-moraldo-00a646122/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fab','linkedin']  } size="2x"/>
             <ContactType>Roger Moraldo</ContactType>
             </a>
-            <a style={ { marginBottom: '15px' } } href={ resume } target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fas','file']  } size="2x" />
+            <a style={ { marginBottom: '15px' } } href={ resume } target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={ ['fas','file']  } size="2x"/>
             <ContactType>Résumé</ContactType>
             </a>
           </Links>
@@ -111,8 +112,8 @@ class TheGuy extends Component {
           </Affiliates>
         </ContactInfo>
         <AutoBio as="section">
-        <Para>I'm one of the eldest of the first generation Trinidadians in my family, born and primarily raised in Boston MA. While I don't have an aversion to physical activity I have always found more comfort in the written word and the blank canvas of paper and pen(cil), creating shape and scripture since I was able.</Para>
-        <Para>My introduction to the wonderful world of the Web came when I was about as young as 10 or 12, and I found myself revisiting it during a leisurely dive into roleplaying when I wanted to portray my characters in a more cohesive light during my junior year, exercising my penchant for design and diction. Seven years since I was finally allowed an opportunity to train under and work with Resilient Coders to become the professionally-driven developer that I am now, with a heavier focus on the aesthetic appeal and accessibility of user-side interactions.</Para>
+        <Para>I'm one of the eldest of the first generation Trinidadians in my family, born and primarily raised in Boston MA. I have always found more comfort in the written word and paper and pen(cil), creating shapes and scripts since I was able.</Para>
+        <Para>My introduction to the wonderful world of the Web came when I was about 10 or 12, and I found myself revisiting it during a leisurely dive into roleplaying when I wanted to portray my characters in a more cohesive light during my junior year, exercising my penchant for design and diction. Seven years since I was finally allowed an opportunity to train under and work with Resilient Coders to become the professionally-driven developer that I am now, with a heavier focus on the aesthetic appeal and accessibility of user-side interactions.</Para>
         <Para>My foray into software development stems from my love of speculative fiction, a genre that always struck me as the best conduit for experimentation with wordplay, concepts and philosophies. To me, software development encompasses the same malleability that can keep my mind sharp even into my more age-addled years, and I don't see myself straying from it anytime soon.</Para>
         </AutoBio>
       </div>
