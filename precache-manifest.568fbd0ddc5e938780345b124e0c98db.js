@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a52e9b0eb0745b6393b637ff6722e9b",
+    "revision": "ff85fc755b363f9dbb391dbc2118b486",
     "url": "/web-portfolio/index.html"
   },
   {
-    "revision": "39ead11d7ac8c02cc52f",
+    "revision": "d52dbbb89e64a2062ebf",
     "url": "/web-portfolio/static/css/main.68b279a3.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-portfolio/static/js/2.f92bedc5.chunk.js"
   },
   {
-    "revision": "39ead11d7ac8c02cc52f",
-    "url": "/web-portfolio/static/js/main.b2240316.chunk.js"
+    "revision": "d52dbbb89e64a2062ebf",
+    "url": "/web-portfolio/static/js/main.62e725d1.chunk.js"
   },
   {
     "revision": "63820ce3b05b0b99afee",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-portfolio/static/media/Alexis-Unarmored.78951aab.png"
   },
   {
-    "revision": "a9bd414a694637c631098e8a4a0261ed",
-    "url": "/web-portfolio/static/media/Resume-9-28.a9bd414a.pdf"
+    "revision": "fa5c605bf451f5283eafc87ae72917ee",
+    "url": "/web-portfolio/static/media/Resume-9-28.fa5c605b.pdf"
   },
   {
     "revision": "b54126f01dd5d780faf3a1dca72357cf",
