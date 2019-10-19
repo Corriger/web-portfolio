@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import face from './../imgs/misc/me.933bd7b3.png'
-import logo from './../imgs/misc/logo.png'
 
 import resume from './Resume-9-28.pdf'
 
@@ -112,8 +111,8 @@ class TheGuy extends Component {
           </Affiliates>
         </ContactInfo>
         <AutoBio as="section">
-        <Para>I'm one of the eldest of the first generation Trinidadians in my family, born and primarily raised in Boston MA. I have always found more comfort in the written word and filling in the , creating shapes and scripts since I was able.</Para>
-        <Para>My introduction to the wonderful world of the Web came when I was about 10 or 12; when I was 17 and diving more heavily into roleplaying and desiring a way to structure character information I revistied the concept taught to me, exercising my penchant for design and diction through its application. Seven years later I took an opportunity to hone my skills under Resilient Coders and make myself the professionally-driven developer that I am now, with a strong focus on the aesthetic appeal and accessibility of user-side interactions.</Para>
+        <Para>I'm one of the eldest of the first generation Trinidadians in my family, born and primarily raised in Boston MA. I have always found more comfort in exercising the limits of my imagination, drawing and writing since I was able - something only my mother seemed to share among the entirety of my family.</Para>
+        <Para>My introduction to the wonderful world of the Web came when I was about 10 or 12, during a one-day introduction to HTML4; when I was 17 and diving more heavily into roleplaying and desiring a way to structure character information I revistied the concept taught to me, exercising my penchant for design and diction through its application. The years following I took an opportunity to hone my skills with Resilient Coders and make myself the professionally-driven developer that I am now, with a strong focus on the aesthetic appeal and accessibility of user-side interactions.</Para>
         <Para>My drive to stay with software development stems from my love of speculative fiction, a genre that always struck me as the best conduit for experimentation with wordplay, concepts and philosophies. To me, software development encompasses the same malleability that can keep my mind sharp even into my more age-addled years, and I don't see myself straying from it anytime soon.</Para>
         </AutoBio>
       </div>
