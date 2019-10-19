@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f16c1a9c3c985b59736aae37152c627",
+    "revision": "9a52e9b0eb0745b6393b637ff6722e9b",
     "url": "/web-portfolio/index.html"
   },
   {
-    "revision": "53e5122e63e082d7de16",
+    "revision": "39ead11d7ac8c02cc52f",
     "url": "/web-portfolio/static/css/main.68b279a3.chunk.css"
   },
   {
-    "revision": "3ed914ed534f3038bf44",
-    "url": "/web-portfolio/static/js/2.63e6f2b5.chunk.js"
+    "revision": "02426932cc1d74b9f80a",
+    "url": "/web-portfolio/static/js/2.f92bedc5.chunk.js"
   },
   {
-    "revision": "53e5122e63e082d7de16",
-    "url": "/web-portfolio/static/js/main.d119d74a.chunk.js"
+    "revision": "39ead11d7ac8c02cc52f",
+    "url": "/web-portfolio/static/js/main.b2240316.chunk.js"
   },
   {
     "revision": "63820ce3b05b0b99afee",
@@ -86,10 +86,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "689fdee3f3aa7e435c9ba31e762fe83b",
     "url": "/web-portfolio/static/media/killer-bee-hazard-suit.689fdee3.png"
-  },
-  {
-    "revision": "642654b4b4bffd1499ba91cfd8f908ab",
-    "url": "/web-portfolio/static/media/logo.642654b4.png"
   },
   {
     "revision": "933bd7b39684e813d6be8c4d1b70858f",
