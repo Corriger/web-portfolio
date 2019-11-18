@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2610c277301c9128678219187cde1692",
+    "revision": "cf0c1b94aede184b96fca3d8026d2c9d",
     "url": "/web-portfolio/index.html"
   },
   {
-    "revision": "506f8b4dcdc664fdbf6e",
+    "revision": "d3425054467444728eed",
     "url": "/web-portfolio/static/css/main.68b279a3.chunk.css"
   },
   {
-    "revision": "3ed914ed534f3038bf44",
-    "url": "/web-portfolio/static/js/2.63e6f2b5.chunk.js"
+    "revision": "01f4bd3712f6239380eb",
+    "url": "/web-portfolio/static/js/2.af3354ee.chunk.js"
   },
   {
-    "revision": "506f8b4dcdc664fdbf6e",
-    "url": "/web-portfolio/static/js/main.f18b716f.chunk.js"
+    "revision": "d3425054467444728eed",
+    "url": "/web-portfolio/static/js/main.d8d23b7e.chunk.js"
   },
   {
     "revision": "63820ce3b05b0b99afee",
@@ -34,6 +34,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "77df7037074ce4d5aae60cce31bdcda4",
     "url": "/web-portfolio/static/media/alexis-inline.77df7037.png"
+  },
+  {
+    "revision": "dfc3eae57ffe26657f6e1534876f6768",
+    "url": "/web-portfolio/static/media/dante devil form for shadow.dfc3eae5.png"
+  },
+  {
+    "revision": "983a24d728555d2bcaa0540dd64826db",
+    "url": "/web-portfolio/static/media/dante inline w new sword.983a24d7.png"
   },
   {
     "revision": "9053f2e6703ccbc9521efb47127fec1a",
@@ -122,6 +130,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0f880024f0fd17cfdf51005a84fafb23",
     "url": "/web-portfolio/static/media/react.0f880024.svg"
+  },
+  {
+    "revision": "2d13b43b6debb02a5f97a33b87f42b2a",
+    "url": "/web-portfolio/static/media/rebellion mk II.2d13b43b.png"
   },
   {
     "revision": "2682178882ebefac6ae9283a7d4af97d",
