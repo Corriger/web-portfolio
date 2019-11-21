@@ -32,7 +32,6 @@ function importAll(r) {
 class TheArts extends Component {
   render(){
     const artwork = importAll(require.context('./../imgs/art', false, /\.(png|jpe?g|svg)$/))
-    console.log(artwork)
     return(
       <div>
       { artwork.map(
