@@ -58,6 +58,11 @@ const SiteQuote = styled.blockquote`
 
 let projects = [
   {
+    href: "https://corriger.github.io/legendary-hunter/",
+    logo: "https://corriger.github.io/legendary-hunter/logo.png",
+    quote: "Defy the destiny of dark blood."
+  },
+  {
     href: "http://www.thelennyzakimfund.org/",
     logo: "http://www.thelennyzakimfund.org/wp-content/themes/sage/dist/images/lzf-logo.svg",
     quote: "Deeply committed to social justice and to the fundamental rights and dignity of all people, The Lenny Zakim Fund changes the course of people’s lives."
