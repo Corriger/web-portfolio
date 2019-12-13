@@ -59,7 +59,7 @@ const SiteQuote = styled.blockquote`
 let projects = [
   {
     href: "https://corriger.github.io/legendary-hunter/",
-    logo: "https://corriger.github.io/legendary-hunter/logo.png",
+    logo: "https://corriger.github.io/web-portfolio/static/media/dmc-group-banner.9053f2e6.png",
     quote: "Defy the destiny of dark blood."
   },
   {
