@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "202963a9a5e0dadd86bb9e96eaa45f68",
+    "revision": "9cc5fcc542cea8f08e60230513d258f9",
     "url": "/web-portfolio/index.html"
   },
   {
-    "revision": "cc33714ac4883079c893",
+    "revision": "c5120abb6999f8bf4971",
     "url": "/web-portfolio/static/css/main.68b279a3.chunk.css"
   },
   {
-    "revision": "15b60d61a3f09b8cbff1",
-    "url": "/web-portfolio/static/js/2.41987994.chunk.js"
+    "revision": "b808429dffaab83ce0e4",
+    "url": "/web-portfolio/static/js/2.dbeefbf9.chunk.js"
   },
   {
-    "revision": "cc33714ac4883079c893",
-    "url": "/web-portfolio/static/js/main.9f3d550a.chunk.js"
+    "revision": "c5120abb6999f8bf4971",
+    "url": "/web-portfolio/static/js/main.a622026b.chunk.js"
   },
   {
     "revision": "63820ce3b05b0b99afee",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-portfolio/static/media/Alexis-Unarmored.78951aab.png"
   },
   {
-    "revision": "fa5c605bf451f5283eafc87ae72917ee",
-    "url": "/web-portfolio/static/media/Resume-9-28.fa5c605b.pdf"
+    "revision": "6a5747d9aed6f35b0bb888fe73520bae",
+    "url": "/web-portfolio/static/media/DevSume.6a5747d9.pdf"
   },
   {
     "revision": "b54126f01dd5d780faf3a1dca72357cf",
@@ -34,6 +34,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "77df7037074ce4d5aae60cce31bdcda4",
     "url": "/web-portfolio/static/media/alexis-inline.77df7037.png"
+  },
+  {
+    "revision": "dfc3eae57ffe26657f6e1534876f6768",
+    "url": "/web-portfolio/static/media/dante devil form for shadow.dfc3eae5.png"
+  },
+  {
+    "revision": "983a24d728555d2bcaa0540dd64826db",
+    "url": "/web-portfolio/static/media/dante inline w new sword.983a24d7.png"
   },
   {
     "revision": "9053f2e6703ccbc9521efb47127fec1a",
@@ -46,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f7c01f96b90af7531b6b7c5e942d434a",
     "url": "/web-portfolio/static/media/dt.f7c01f96.png"
+  },
+  {
+    "revision": "972ccfe8933e51a5093273c9fda02629",
+    "url": "/web-portfolio/static/media/eris model Ω.972ccfe8.png"
   },
   {
     "revision": "6c8536ae2ae25576faa2f44a5467c85a",
@@ -146,10 +158,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2682178882ebefac6ae9283a7d4af97d",
     "url": "/web-portfolio/static/media/rebellion.26821788.png"
-  },
-  {
-    "revision": "2d13b43b6debb02a5f97a33b87f42b2a",
-    "url": "/web-portfolio/static/media/rebellion_mk_II.2d13b43b.png"
   },
   {
     "revision": "78b4fd878250003b88f6bdc2a62b4809",
