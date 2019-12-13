@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46046c3dc3906fb4035baf28a8ddbce3",
+    "revision": "202963a9a5e0dadd86bb9e96eaa45f68",
     "url": "/web-portfolio/index.html"
   },
   {
-    "revision": "83fef75ffef22e2ad897",
+    "revision": "cc33714ac4883079c893",
     "url": "/web-portfolio/static/css/main.68b279a3.chunk.css"
   },
   {
-    "revision": "01f4bd3712f6239380eb",
-    "url": "/web-portfolio/static/js/2.af3354ee.chunk.js"
+    "revision": "15b60d61a3f09b8cbff1",
+    "url": "/web-portfolio/static/js/2.41987994.chunk.js"
   },
   {
-    "revision": "83fef75ffef22e2ad897",
-    "url": "/web-portfolio/static/js/main.f7b99532.chunk.js"
+    "revision": "cc33714ac4883079c893",
+    "url": "/web-portfolio/static/js/main.9f3d550a.chunk.js"
   },
   {
     "revision": "63820ce3b05b0b99afee",
@@ -36,14 +36,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-portfolio/static/media/alexis-inline.77df7037.png"
   },
   {
-    "revision": "dfc3eae57ffe26657f6e1534876f6768",
-    "url": "/web-portfolio/static/media/dante devil form for shadow.dfc3eae5.png"
-  },
-  {
-    "revision": "983a24d728555d2bcaa0540dd64826db",
-    "url": "/web-portfolio/static/media/dante inline w new sword.983a24d7.png"
-  },
-  {
     "revision": "9053f2e6703ccbc9521efb47127fec1a",
     "url": "/web-portfolio/static/media/dmc-group-banner.9053f2e6.png"
   },
@@ -56,8 +48,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-portfolio/static/media/dt.f7c01f96.png"
   },
   {
-    "revision": "972ccfe8933e51a5093273c9fda02629",
-    "url": "/web-portfolio/static/media/eris model Ω.972ccfe8.png"
+    "revision": "6c8536ae2ae25576faa2f44a5467c85a",
+    "url": "/web-portfolio/static/media/first picture.6c8536ae.png"
+  },
+  {
+    "revision": "3d32b3591ebd0243469dbbace8f010b5",
+    "url": "/web-portfolio/static/media/hilda fight gear.3d32b359.png"
+  },
+  {
+    "revision": "67d95236ff30c6d7d01a22a5a20050bf",
+    "url": "/web-portfolio/static/media/hilda inline.67d95236.png"
+  },
+  {
+    "revision": "13b8656ae0539626ee5a0da7d6ebeacd",
+    "url": "/web-portfolio/static/media/hilda-mugshot.13b8656a.png"
   },
   {
     "revision": "ae6b6b870697a5a4c76134b12b824535",
@@ -128,6 +132,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/web-portfolio/static/media/private dick 3.3a6eaecb.png"
   },
   {
+    "revision": "ea8c05c8806b96cc71d8e5182f222d28",
+    "url": "/web-portfolio/static/media/private shotgun.ea8c05c8.png"
+  },
+  {
     "revision": "0f880024f0fd17cfdf51005a84fafb23",
     "url": "/web-portfolio/static/media/react.0f880024.svg"
   },
@@ -138,6 +146,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2682178882ebefac6ae9283a7d4af97d",
     "url": "/web-portfolio/static/media/rebellion.26821788.png"
+  },
+  {
+    "revision": "2d13b43b6debb02a5f97a33b87f42b2a",
+    "url": "/web-portfolio/static/media/rebellion_mk_II.2d13b43b.png"
   },
   {
     "revision": "78b4fd878250003b88f6bdc2a62b4809",
