@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import face from './../imgs/misc/me.933bd7b3.png'
 
-import resume from './Resume-9-28.pdf'
+import resume from './DevSume.pdf'
 
 import resilient from './../imgs/bzn/resilient-coders.png'
 import nanigans from './../imgs/bzn/nanigans.png'
