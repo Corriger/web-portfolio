@@ -11,7 +11,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-image-gallery": "^0.8.3",
-    "react-scripts": "1.0.12",
+    "react-scripts": "5.0.1",
     "react-tabs": "^2.0.0",
     "sass-mq": "^3.3.2"
   },
